@@ -1,0 +1,52 @@
+.main{
+  background-color: hwb(207 90% 7%);
+  width: 270px;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+.image{
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.user{
+  font-size: 24px;
+  font-weight: lighter;
+}
+.slist{
+  width: 100%;
+  height: 180px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+.selection{
+  width: 100%;
+  font-size: 18px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.selection > i{
+  margin-right: 10px;
+  margin-left: 15px;
+}
+.selection:hover{
+  background-color: darkblue;
+  color: white;
+  transition: 1s;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  cursor: pointer;
+}

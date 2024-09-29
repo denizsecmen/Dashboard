@@ -1,0 +1,6 @@
+.main{
+  width: 100vw;
+  height: 100vh;
+  background-color: hwb(210 86% 8%);
+  display: flex;
+}
