@@ -1,4 +1,8 @@
 import styles from "./statistics.module.css";
 export default function Statistics() {
-  return;
+  return (
+    <div className={styles.main}>
+      
+    </div>
+  );
 }

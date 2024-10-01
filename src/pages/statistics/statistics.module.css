@@ -1,0 +1,4 @@
+.main{
+  width: calc(100%-270px);
+  background-color: red;
+}
