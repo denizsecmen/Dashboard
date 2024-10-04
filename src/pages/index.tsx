@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Vnavbar from "./vnavbar/vnavbar";
 import Mains from './mains/mains';
+import { useContext } from "react";
+import context from "./context/context";
 export default function Home() {
   return (
     <>

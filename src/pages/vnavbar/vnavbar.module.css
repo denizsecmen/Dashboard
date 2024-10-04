@@ -40,6 +40,9 @@
 .selection > i{
   margin-right: 10px;
   margin-left: 15px;
+  font-size: 18px!important;
+  height: 18px!important;
+  width: 18px!important;
 }
 .selection:hover{
   background-color: darkblue;
