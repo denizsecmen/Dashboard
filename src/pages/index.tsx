@@ -2,9 +2,10 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Vnavbar from "./vnavbar/vnavbar";
 import Mains from './mains/mains';
-import { useContext,useState } from "react";
+import { useContext, useState } from "react";
+import context from "./context/context";
 export default function Home() {
-  let [stat, chsatat] = useState("");
+  let a = useContext(context);
   return (
     <>
       <Head>

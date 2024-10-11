@@ -37,12 +37,13 @@
   align-items: center;
 
 }
-.selection > i{
+.selection > .i{
   margin-right: 10px;
   margin-left: 15px;
-  font-size: 18px!important;
-  height: 18px!important;
-  width: 18px!important;
+  font-size: 20px!important;
+  height: 20px!important;
+  width: 20px!important;
+  display: block!important;
 }
 .selection:hover{
   background-color: darkblue;
