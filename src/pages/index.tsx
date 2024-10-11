@@ -2,9 +2,9 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Vnavbar from "./vnavbar/vnavbar";
 import Mains from './mains/mains';
-import { useContext } from "react";
-import context from "./context/context";
+import { useContext,useState } from "react";
 export default function Home() {
+  let [stat, chsatat] = useState("");
   return (
     <>
       <Head>
@@ -20,8 +20,9 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <Vnavbar />
-        <Mains/>
+        <Mains />
       </div>
     </>
   );
 }
+  

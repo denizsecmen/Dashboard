@@ -1,5 +1,5 @@
-import styles from "./statistics.module.css";
-export default function Statistics() {
+import styles from "./transaction.module.css";
+export default function Transaction() {
   return (
     <div className={styles.main}>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi a sit ut nobis accusantium sequi itaque et soluta natus laboriosam obcaecati placeat, quos unde enim excepturi officia vitae minima non.
