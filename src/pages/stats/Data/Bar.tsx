@@ -3,7 +3,7 @@ let dataBar = {
   datasets: [
     {
       label: 'My First Dataset',
-      data: [12, 19, 3, 5, 2],
+      data: [40, 50, 30, 60, 40],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -22,4 +22,26 @@ let dataBar = {
     },
   ],
 };
-export { dataBar };
+const optionsBar = {
+  responsive: false,
+  maintainAspectRatio: false,
+  scales: {
+    y: {
+      title: {
+        display: true,
+        text: "Followers",
+      },
+      display: true,
+      beginAtZero: true,
+      max: 100,
+    },
+    x: {
+      title: {
+        display: true,
+        text: "Months",
+      },
+      display: true,
+    },
+  },
+};
+export { dataBar,optionsBar };
