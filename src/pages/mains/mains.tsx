@@ -23,7 +23,6 @@ export default function Mains() {
   } else {
     return (
       <div className={styles.mains}>
-        {turn}
       </div>
     );
   }
