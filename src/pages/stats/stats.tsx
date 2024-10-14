@@ -1,14 +1,21 @@
 
 import React from "react";
-import { Bar } from "react-chartjs-2";
+import { Bar, Doughnut} from "react-chartjs-2";
 import styles from './stats.module.css';
+import { useEffect } from "react";
 import { dataBar, optionsBar } from "./Data/Bar";
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler, } from "chart.js";
-ChartJS.register(CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler );
+import { dataDoughnut } from "./Data/Doughnut";
+import { Chart as ChartJS,ArcElement, CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler, } from "chart.js";
+ChartJS.register(CategoryScale,ArcElement, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler );
 export default function Statistics(){
   return (
     <div className={styles.main}>
-      <Bar className={styles.bar} data={dataBar} options={optionsBar} />
+      <div className={styles.bar} >
+        <Bar data={dataBar} options={{}} />
+      </div>
+      <div className={styles.doughnut}>
+        <Doughnut data={dataDoughnut} options={{ maintainAspectRatio: false }}/>
+      </div>
     </div>
   );
 };

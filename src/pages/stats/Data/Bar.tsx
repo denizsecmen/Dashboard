@@ -2,7 +2,7 @@ let dataBar = {
    labels: ['January', 'February', 'March', 'April', 'May'],
   datasets: [
     {
-      label: 'My First Dataset',
+      label: 'Followers Bar Chart',
       data: [40, 50, 30, 60, 40],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
@@ -23,25 +23,18 @@ let dataBar = {
   ],
 };
 const optionsBar = {
-  responsive: false,
-  maintainAspectRatio: false,
-  scales: {
-    y: {
-      title: {
-        display: true,
-        text: "Followers",
-      },
-      display: true,
-      beginAtZero: true,
-      max: 100,
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+        legend: {
+            display: true, // Set to true if you want the legend
+            labels: {
+                boxWidth: 0, // This will hide the colored box
+                color: 'black', // Set the color of the text
+            },
+            position: 'top',
+        },
     },
-    x: {
-      title: {
-        display: true,
-        text: "Months",
-      },
-      display: true,
-    },
-  },
 };
+
 export { dataBar,optionsBar };
