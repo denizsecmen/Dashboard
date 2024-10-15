@@ -1,3 +1,6 @@
+import { plugins } from "chart.js";
+import { title } from "process";
+
 const dataDoughnut = {
    labels: ['Likes','Dislikes'],
   datasets: [
@@ -14,4 +17,16 @@ const dataDoughnut = {
     }
   ]
 };
-export { dataDoughnut };
+let optionsDoghnut = {
+  plugins: {
+    title: {
+      display: true,
+      text: 'Reactions', 
+        font: {
+          size: 20, 
+          weight:'normal',
+        },
+    }
+  }
+}
+export { dataDoughnut,optionsDoghnut };
