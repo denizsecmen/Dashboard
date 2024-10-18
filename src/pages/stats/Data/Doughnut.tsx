@@ -1,4 +1,4 @@
-import { plugins } from "chart.js";
+import { ChartOptions, plugins } from "chart.js";
 import { title } from "process";
 
 const dataDoughnut = {
@@ -17,7 +17,7 @@ const dataDoughnut = {
     }
   ]
 };
-let optionsDoghnut = {
+let optionsDoghnut:ChartOptions<"doughnut"> = {
   plugins: {
     title: {
       display: true,

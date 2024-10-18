@@ -1,11 +1,11 @@
 
 import React from "react";
-import { Bar, Doughnut} from "react-chartjs-2";
+import { Bar, Doughnut,Scatter} from "react-chartjs-2";
 import styles from './stats.module.css';
-import { useEffect } from "react";
 import { dataBar, optionsBar } from "./Data/Bar";
+import { dataScatter } from './Data/Scatter';
 import { dataDoughnut,optionsDoghnut } from "./Data/Doughnut";
-import { Chart as ChartJS,ArcElement, CategoryScale, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler, } from "chart.js";
+import { Chart as ChartJS,ArcElement, CategoryScale, LinearScale,RadarController, PointElement, BarElement, Title, Tooltip, Legend, Filler, } from "chart.js";
 ChartJS.register(CategoryScale,ArcElement, LinearScale, PointElement, BarElement, Title, Tooltip, Legend, Filler );
 export default function Statistics(){
   return (
@@ -15,6 +15,9 @@ export default function Statistics(){
       </div>
       <div className={styles.doughnut}>
         <Doughnut data={dataDoughnut} options={optionsDoghnut}/>
+      </div>
+      <div className={styles.scatter}>
+        <Scatter data={dataScatter}/>
       </div>
     </div>
   );
