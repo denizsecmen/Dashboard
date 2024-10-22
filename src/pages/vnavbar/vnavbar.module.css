@@ -54,3 +54,12 @@
   border-bottom-left-radius: 0px;
   cursor: pointer;
 }
+.selection:focus{
+  background-color: darkblue;
+  color: white;
+  transition: 0.5s;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  cursor: pointer;
+}

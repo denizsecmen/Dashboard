@@ -60,5 +60,53 @@ const optionsBar = {
         },
     },
 };
+let dataBarFollowers = {
+   labels: ['January', 'February', 'March', 'April', 'May'],
+  datasets: [
+    {
+      label: 'Followers Bar Chart',
+      data: [40, 50, 30, 60, 40],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+      ],
+      borderWidth: 1,
+    },
+  ],
+};
+let followersBar = {
+   labels: ['January', 'February', 'March', 'April', 'May'],
+  datasets: [
+    {
+      label: 'Followers Loss Bar Chart',
+      data: [1000, 700, 200, 900, 1200],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+      ],
+      borderWidth: 1,
+    },
+  ],
+};
 
-export { dataBar,optionsBar,dataLossBar };
+export { dataBar,optionsBar,followersBar,dataLossBar };
