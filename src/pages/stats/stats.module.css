@@ -2,45 +2,48 @@
   background-color: #eeef;
   border-radius: 5px;
   margin: 10px;
+  height: 300px;
+  width:  400px;
   padding: 10px;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 .main{
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-  grid-template-rows: repeat(2, auto); /* Two rows, height will be determined by content */
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
 }
 .doughnut{
   background-color: #eeef;
   margin:10px;
   border-radius: 5px;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  height: 300px;
+  width:  300px;
+  padding: 10px;
+
 }
 .scatter{
   background-color: #eeef;
   margin:10px;
   border-radius: 5px;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  height: 300px;
+  width:  400px;
+  padding: 10px;
 }
 .lossbar{
   background-color: #eeef;
   border-radius: 5px;
   margin-left: 10px;
   padding: 10px;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  
+  height: 300px;
+  width: 400px;
+  margin: 10px;
 }
 .followers{
   background-color: #eeef;
   border-radius: 5px;
   padding: 10px;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  
+  height: 300px;
+  width: 400px;
+  margin: 10px;
 }
